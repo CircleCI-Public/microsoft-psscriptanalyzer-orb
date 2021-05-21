@@ -4,7 +4,10 @@ if ($version -gt "5.1.14393.206") {
     # installed. 
     # As per https://github.com/PowerShell/PSScriptAnalyzer#from-powershell-gallery.
     Write-Output "Installing Nuget (required for your version of PowerShell)"
-    Install-PackageProvider NuGet -MinimumVersion 2.8.5.201 –Force
+    Find-PackageProvider -Name "Nuget" -AllVersions
+    Install-PackageProvider -Name "Nuget" -RequiredVersion "2.8.5.201" -Force
+    Get-PackageProvider -ListAvailable
+    Import-PackageProvider -Name "Nuget" -RequiredVersion "2.8.5.201" -Verbose
 }
 
 Install-Module -Name PSScriptAnalyzer -RequiredVersion $Env:PSSA_INSTALL_VERSION -Force

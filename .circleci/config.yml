@@ -19,8 +19,7 @@ parameters:
 
 jobs:
   integration-test_install-check:
-    docker:
-      - image: mcr.microsoft.com/powershell:latest
+    executor: psscriptanalyzer/linux
     steps:
       - checkout
       - psscriptanalyzer/install

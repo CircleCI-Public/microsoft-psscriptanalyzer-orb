@@ -17,7 +17,7 @@ parameters:
       custom file. Read more here: https://github.com/PowerShell/PSScriptAnalyzer#using-parameter-settings
 steps:
   - run:
-      shell: pwsh.exe
+      shell: pwsh
       name: Run PSScriptAnalyzer
       command: <<include(scripts/check.ps1)>>
       environment:

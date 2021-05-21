@@ -7,7 +7,7 @@ parameters:
     description: "Version of PSScriptAnalyzer to install."
 steps:
   - run:
-      shell: pwsh.exe
+      shell: pwsh
       name: Install PSScriptAnalyzer
       command: <<include(scripts/install.ps1)>>
       environment:

@@ -8,4 +8,4 @@ if ($version -gt "5.1.14393.206") {
     Install-PackageProvider Nuget -MinimumVersion 2.8.5.201 –Force
 }
 
-Install-Module -Name PSScriptAnalyzer -RequiredVersion $Env.PSSA_INSTALL_VERSION -Force
+Install-Module -Name PSScriptAnalyzer -RequiredVersion $Env:PSSA_INSTALL_VERSION -Force

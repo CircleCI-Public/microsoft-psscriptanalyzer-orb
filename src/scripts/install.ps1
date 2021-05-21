@@ -1,5 +1,6 @@
 $version = (Get-Host).Version.ToString()
 if ($version -gt "5.1.14393.206") {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     # If we're running a newer version of PowerShell, ensure latest Nuget is 
     # installed. 
     # As per https://github.com/PowerShell/PSScriptAnalyzer#from-powershell-gallery.

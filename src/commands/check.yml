@@ -1,0 +1,26 @@
+description: >
+ Run PSScriptAnalyzer.
+parameters:
+  recurse:
+    type: boolean
+    default: true
+    description: "Whether to recurse into subdirectories within the module."
+  module:
+    type: string
+    default: "."
+    description: "Path to the module to analyze."
+  settings:
+    type: string
+    default: "PSGallery"
+    description: >
+      Set of rules to analyze with, either a built in option or a
+      custom file. Read more here: https://github.com/PowerShell/PSScriptAnalyzer#using-parameter-settings
+steps:
+  - run:
+      shell: pwsh.exe
+      name: Run PSScriptAnalyzer
+      command: <<include(scripts/check.ps1)>>
+      environment:
+        PSSA_CHECK_RECURSE: <<parameters.recurse>>
+        PSSA_CHECK_MODULE: <<parameters.module>>
+        PSSA_CHECK_SETTINGS: <<parameters.settings>>

@@ -1,0 +1,14 @@
+description: >
+  Install PSScriptAnalyzer if it's not already installed in the executor.
+parameters:
+  version:
+    type: string
+    default: "1.19.1"
+    description: "Version of PSScriptAnalyzer to install."
+steps:
+  - run:
+      shell: pwsh.exe
+      name: Install PSScriptAnalyzer
+      command: <<include(scripts/install.ps1)>>
+      environment:
+        PSSA_INSTALL_VERSION: <<parameters.version>>

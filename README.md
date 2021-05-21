@@ -1,14 +1,12 @@
 # Orb Project Template
 
-[![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/circleci/psscriptanalyzer)](https://circleci.com/orbs/registry/orb/circleci/psscriptanalyzer) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/psscriptanalyzer-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb)
+[![CircleCI Orb Version](https://badges.circleci.com/orbs/circleci/psscriptanalyzer.svg)](https://circleci.com/orbs/registry/orb/circleci/psscriptanalyzer)
+[![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/psscriptanalyzer-orb/master/LICENSE)
+[![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 
-
-A starter template for orb projects. Build, test, and publish orbs automatically on CircleCI with [Orb-Tools](https://circleci.com/orbs/registry/orb/circleci/orb-tools).
-
-Additional READMEs are available in each directory.
-
-
+Run the PowerShell Script Analyzer against your PowerShell scripts in CircleCI.
 
 ## Resources
 

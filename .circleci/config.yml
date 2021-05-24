@@ -24,7 +24,7 @@ jobs:
       - checkout
       - psscriptanalyzer/install
       - psscriptanalyzer/check:
-          module: src/scripts
+          module: sample
 
 workflows:
   test-pack:

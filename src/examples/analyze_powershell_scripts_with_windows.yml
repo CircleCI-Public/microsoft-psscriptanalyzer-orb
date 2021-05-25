@@ -1,0 +1,20 @@
+description: >
+  Workflow containing the orb's analyze job.
+usage:
+  version: 2.1
+  orbs:
+    psscriptanalyzer: circleci/psscriptanalyzer@1
+    windows: circleci/windows@2.4
+  jobs:
+    analyze:
+      executor:
+        name: win/default
+        shell: pwsh.exe
+      steps:
+        - psscriptanalyzer/install
+        - psscriptanalyzer/check
+
+  workflows:
+    use-my-orb:
+      jobs:
+        - analyze

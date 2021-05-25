@@ -1,0 +1,9 @@
+version: 2.1
+
+description: >
+  Quickly analyze PowerShell scripts and modules within your CircleCI pipelines,
+  either using the Microsoft PowerShell Docker image or Windows executors.
+
+display:
+  home_url: "https://github.com/PowerShell/PSScriptAnalyzer"
+  source_url: "https://github.com/CircleCI-Public/PSScriptAnalyzer-orb"

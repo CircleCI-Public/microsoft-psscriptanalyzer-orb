@@ -1,0 +1,10 @@
+description: >
+  Official Linux + PowerShell Docker image.
+docker:
+  - image: mcr.microsoft.com/powershell:<<parameters.tag>>
+parameters:
+  tag:
+    default: latest
+    description: >
+      Version tag of PowerShell image to use.
+    type: string

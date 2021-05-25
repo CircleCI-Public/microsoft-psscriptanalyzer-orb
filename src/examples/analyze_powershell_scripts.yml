@@ -1,0 +1,10 @@
+description: >
+  Workflow containing the orb's analyze job.
+usage:
+  version: 2.1
+  orbs:
+    psscriptanalyzer: circleci/psscriptanalyzer@1
+  workflows:
+    use-my-orb:
+      jobs:
+        - psscriptanalyzer/analyze

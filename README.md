@@ -1,6 +1,6 @@
 # Orb Project Template
 
-[![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb)
+[![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb.svg?style=shield)](https://circleci.com/gh/CircleCI-Public/psscriptanalyzer-orb)
 [![CircleCI Orb Version](https://badges.circleci.com/orbs/circleci/psscriptanalyzer.svg)](https://circleci.com/orbs/registry/orb/circleci/psscriptanalyzer)
 [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/psscriptanalyzer-orb/master/LICENSE)
 [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)

@@ -1,0 +1,29 @@
+parameters:
+  image-tag:
+    type: string
+    default: latest
+    description: Tag of the Linux/PowerShell Docker image to use.
+  analyzer-version:
+    type: string
+    default: "1.19.1"
+    description: Version of PSScriptAnalyzer to install.
+  module:
+    type: string
+    default: "."
+    description: Path to module to analyze.
+  settings:
+    type: string
+    default: "PSGallery"
+    description: Settings group to use during analysis.
+
+executor:
+  name: linux
+  tag: <<parameters.image-tag>>
+
+steps:
+  - checkout
+  - install:
+      version: <<parameters.analyzer-version>>
+  - check:
+      module: <<parameters.module>>
+      settings: <<parameters.settings>>

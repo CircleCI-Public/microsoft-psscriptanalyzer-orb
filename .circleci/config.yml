@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  psscriptanalyzer: circleci/psscriptanalyzer@<<pipeline.parameters.dev-orb-version>>
+  psscriptanalyzer: circleci/microsoft-psscriptanalyzer@<<pipeline.parameters.dev-orb-version>>
   orb-tools: circleci/orb-tools@10.0
 
 parameters:
@@ -33,7 +33,7 @@ workflows:
       - orb-tools/lint # Lint Yaml files
       - orb-tools/pack # Pack orb source
       - orb-tools/publish-dev:
-          orb-name: circleci/psscriptanalyzer
+          orb-name: circleci/microsoft-psscriptanalyzer
           context: orb-publisher
           requires:
             - orb-tools/lint
@@ -49,7 +49,7 @@ workflows:
     jobs:
       - integration-test_install-check
       - orb-tools/dev-promote-prod-from-commit-subject:
-          orb-name: circleci/psscriptanalyzer
+          orb-name: circleci/microsoft-psscriptanalyzer
           context: orb-publisher
           add-pr-comment: false
           fail-if-semver-not-indicated: true

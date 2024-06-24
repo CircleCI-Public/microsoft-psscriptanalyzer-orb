@@ -1,5 +1,7 @@
 # Microsoft PSScriptAnalyzer Orb
 
+This orb is no longer supported by CircleCI because of limited or no use. If you would like to use this orb or create your own version feel free to fork the repository and use the following https://circleci.com/blog/building-private-orbs/ as a guide to making this orb into a private orb for your own use. 
+
 [![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/microsoft-psscriptanalyzer-orb.svg?style=shield)](https://circleci.com/gh/CircleCI-Public/microsoft-psscriptanalyzer-orb)
 [![CircleCI Orb Version](https://badges.circleci.com/orbs/circleci/microsoft-psscriptanalyzer.svg)](https://circleci.com/orbs/registry/orb/circleci/microsoft-psscriptanalyzer)
 [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/microsoft-psscriptanalyzer-orb/master/LICENSE)

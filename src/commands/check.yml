@@ -1,6 +1,10 @@
 description: >
  Run PSScriptAnalyzer.
 parameters:
+  enable_exit:
+    type: boolean
+    default: false
+    description: "This parameter exits the PowerShell sessions and returns an exit code equal to the number of error record"
   recurse:
     type: boolean
     default: true
@@ -21,6 +25,7 @@ steps:
       name: Run PSScriptAnalyzer
       command: <<include(scripts/check.ps1)>>
       environment:
+        PSSA_ENABLE_EXIT: <<parameters.enable_exit>>
         PSSA_CHECK_RECURSE: <<parameters.recurse>>
         PSSA_CHECK_MODULE: <<parameters.module>>
         PSSA_CHECK_SETTINGS: <<parameters.settings>>

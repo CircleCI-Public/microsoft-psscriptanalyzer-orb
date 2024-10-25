@@ -7,6 +7,10 @@ parameters:
     type: string
     default: "1.19.1"
     description: Version of PSScriptAnalyzer to install.
+  enable_exit:
+    type: boolean
+    default: false
+    description: "This parameter exits the PowerShell sessions and returns an exit code equal to the number of error record"
   module:
     type: string
     default: "."
@@ -27,3 +31,4 @@ steps:
   - check:
       module: <<parameters.module>>
       settings: <<parameters.settings>>
+      enable_exit: <<parameters.enable_exit>>
